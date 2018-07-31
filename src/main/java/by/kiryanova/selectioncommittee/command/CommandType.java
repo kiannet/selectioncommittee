@@ -1,5 +1,9 @@
 package by.kiryanova.selectioncommittee.command;
 
+import by.kiryanova.selectioncommittee.command.admin.AddEnrolleeCommand;
+import by.kiryanova.selectioncommittee.command.admin.AdminProfileCommand;
+import by.kiryanova.selectioncommittee.command.admin.ToAddEnrolleeCommand;
+import by.kiryanova.selectioncommittee.command.admin.UsersCommand;
 import by.kiryanova.selectioncommittee.command.common.*;
 import by.kiryanova.selectioncommittee.command.user.*;
 import by.kiryanova.selectioncommittee.service.DefaultReceiver;
@@ -26,7 +30,11 @@ public enum CommandType {
     CHANGE_PROFILE(new ChangeProfileCommand(new UserService())),
     CHANGE_PASSWORD(new ChangePasswordCommand(new UserService())),
     TO_CHANGE_PASSWORD(new ToChangePasswordCommand(new UserService())),
-    TO_HOME(new ToHomeCommand(new UserService()));
+    TO_HOME(new ToHomeCommand(new UserService())),
+    ADMIN_PROFILE(new AdminProfileCommand(new UserService())),
+    USERS(new UsersCommand(new UserService())),
+    TO_ADD_ENROLLEE(new ToAddEnrolleeCommand(new CommonService())),
+    ADD_ENROLLEE(new AddEnrolleeCommand(new UserService()));
 
     private Command command;
 

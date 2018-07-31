@@ -18,4 +18,7 @@ public class PageConstant {
     public static final String SIGNEDUP = "/jsp/signedup.jsp";
     public static final String CHANGE_PASSWORD = "/jsp/changepassword.jsp";
     public static final String PASSWORD_CHANGED = "/jsp/passwordchanged.jsp";
+    public static final String ADMIN_PROFILE = "/jsp/admin/profile.jsp";
+    public static final String ADD_ENROLLEE = "/jsp/admin/addenrollee.jsp";
+    public static final String USERS_TABLE = "/jsp/admin/table.jsp";
 }

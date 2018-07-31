@@ -80,6 +80,23 @@ public class UserService {
 
     }
 
+    public void addEnrollee(String surname, String name, String secondName, String passportID, String phone,
+                            String firstSubjectName, String secondSubjectName, String thirdSubjectName,
+                            String firstSubjectPoints, String secondSubjectPoints, String thirdSubjectPoints,
+                            String certificate, String specialty){
+
+        try {
+            int enrolleeId = dao.findEnrolleeIdByPassport(passportID);
+            dao.addEnrollee(passportID, surname, name, secondName, phone, Integer.parseInt(certificate), null);
+            dao.addEnrolleeIdToSubjects(firstSubjectName, Integer.parseInt(firstSubjectPoints), enrolleeId);
+            dao.addEnrolleeIdToSubjects(secondSubjectName, Integer.parseInt(secondSubjectPoints), enrolleeId);
+            dao.addEnrolleeIdToSubjects(thirdSubjectName, Integer.parseInt(thirdSubjectPoints), enrolleeId);
+            dao.addEnrolleeIdToSpecalty(enrolleeId, specialty);
+        } catch (DAOException e) {
+            e.printStackTrace();
+        }
+    }
+
 
     public void updateEnrolleeInfo(String surname, String name, String secondName, String passportID, String phone, int userID) throws ServiceException {
         try {

@@ -57,9 +57,9 @@
                     <li><a href="${pageContext.request.contextPath}/controller?command=to_university">About University</a></li>
                     <li><a href="${pageContext.request.contextPath}/controller?command=to_faculties">Faculties</a></li>
                     <li><a href="${pageContext.request.contextPath}/controller?command=results">Results</a></li>
-                    <li><a href="${pageContext.request.contextPath}/controller?command=adminprofile">Profile</a></li>
+                    <li><a href="${pageContext.request.contextPath}/controller?command=admin_profile">Profile</a></li>
                     <li><a href="${pageContext.request.contextPath}/controller?command=users">Users</a></li>
-                    <li><a href="${pageContext.request.contextPath}/controller?command=toaddenrollee">Add enrollee</a></li>
+                    <li><a href="${pageContext.request.contextPath}/controller?command=to_add_enrollee">Add enrollee</a></li>
                     <li><form name=" changeLocalForm" method="POST" action="controller">
                         <input type="hidden" name="command" value="change_language">
                     <li><button class="localbutton" type="submit" name="locale" value="en_US">EN</button></li>
