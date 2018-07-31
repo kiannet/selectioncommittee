@@ -10,10 +10,12 @@ public class PageConstant {
     public static final String FACULTIES = "/jsp/faculties.jsp";
     public static final String UNIVERSITY = "/jsp/university.jsp";
     public static final String RESULTS = "/jsp/results.jsp";
-    public static final String MOREABOUTFACULTY = "/jsp/moreaboutfaculty.jsp";
-    public static final String CHANGEPROFILE = "jsp/changeprofile.jsp";
-    public static final String PROFILECHANGED = "jsp/profilechanged.jsp";
-    public static final String TABLE = "jsp/table.jsp";
-    public static final String CAROUSEL = "jsp/carousel.jsp";
-    public static final String SIGNEDUP = "jsp/signedup.jsp";
+    public static final String MORE_ABOUT_FACULTY = "/jsp/moreaboutfaculty.jsp";
+    public static final String CHANGE_PROFILE = "/jsp/changeprofile.jsp";
+    public static final String PROFILE_CHANGED = "/jsp/profilechanged.jsp";
+    public static final String TABLE = "/jsp/table.jsp";
+    public static final String CAROUSEL = "/jsp/carousel.jsp";
+    public static final String SIGNEDUP = "/jsp/signedup.jsp";
+    public static final String CHANGE_PASSWORD = "/jsp/changepassword.jsp";
+    public static final String PASSWORD_CHANGED = "/jsp/passwordchanged.jsp";
 }

@@ -1,21 +1,16 @@
 package by.kiryanova.selectioncommittee.dao.impl;
 
-import by.kiryanova.selectioncommittee.connectionpool.ConnectionPool;
-import by.kiryanova.selectioncommittee.connectionpool.ProxyConnection;
-import by.kiryanova.selectioncommittee.dao.IUniversityDAO;
+import by.kiryanova.selectioncommittee.pool.ConnectionPool;
+import by.kiryanova.selectioncommittee.pool.ProxyConnection;
 import by.kiryanova.selectioncommittee.entity.Enrollee;
-import by.kiryanova.selectioncommittee.entity.Faculty;
-import by.kiryanova.selectioncommittee.exception.ConnectionException;
 import by.kiryanova.selectioncommittee.exception.DAOException;
 
 
-import javax.print.DocFlavor;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicBoolean;
-import java.util.regex.Matcher;
 
 public class UniversityDAO {
     private static final String SELECT_FACULTIES_BY_UNIVERSITY = "SELECT name FROM faculty WHERE university_id = (SELECT university_id FROM university WHERE name = ?);";
@@ -27,6 +22,7 @@ public class UniversityDAO {
     private static final String SELECT_POINTS_BY_EBROLLEE_ID = "SELECT points FROM enrollee_subject_points WHERE enrollee_id=?";
     private static final String SELECT_CERTIFICATE_BY_ENROLLEE_ID = "SELECT certificate FROM enrollee WHERE enrollee_id=?";
     private static final String SELECT_SUBJECT_NAMES_BY_EBROLLEE_ID = "SELECT name FROM subject JOIN enrollee_subject_points ON (subject_id = subject_id_p) WHERE enrollee_id=?";
+    private static final String SELECT_DESCRIPTION_BY_FACULTY_NAME = "SELECT description FROM faculty WHERE name=?";
     private static final String NAME = "name";
     private static final String SURNAME = "surname";
     private static final String SECOND_NAME = "second_name";
@@ -161,6 +157,23 @@ public class UniversityDAO {
                 faculties.add(faculty);
             }
             return faculties;
+        } catch (SQLException e) {
+            throw new DAOException(e);
+        }
+    }
+
+    public String findFacultyDescription(String name) throws DAOException {
+        String description = "";
+
+        try (ProxyConnection connection = ConnectionPool.getInstance().getConnection();
+             PreparedStatement statement = connection.prepareStatement(SELECT_DESCRIPTION_BY_FACULTY_NAME)) {
+            statement.setString(1, name);
+            ResultSet resultSet = statement.executeQuery();
+            while (resultSet.next()) {
+                description = resultSet.getString("description");
+
+            }
+            return description;
         } catch (SQLException e) {
             throw new DAOException(e);
         }

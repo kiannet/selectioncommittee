@@ -1,5 +1,7 @@
 fucltyByID = {
-    ABC: 29
+    ABC: 29,
+    Faculty: 36,
+    'Faculty of Computer-aided Design' : 30
 };
 
 function getSpecialties(selectObject) {

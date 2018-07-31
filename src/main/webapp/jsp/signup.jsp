@@ -29,7 +29,7 @@
                 <div class="panel-body">
                         <div class="col-lg-12">
             <form name=" toLoginForm" method="POST" action="controller">
-                <input type="hidden" name="command" value="tologin"/>
+                <input type="hidden" name="command" value="to_login"/>
                 <h2>ALREADY HAS AN ACCOUNT?</h2>
                 <input type="submit" class="btn btn-default" value="Loig in"/>
             </form>
@@ -38,53 +38,60 @@
                 <input type="hidden" name="command" value="signup"/>
 
 
-                <h4>Surname: ${enter}</h4>
+                <h4>Surname:*</h4>
+                <h5>(with a capital letter)</h5>
                 <div class="form-group">
                 <input type="text" name="surname" class="form-control" placeholder="enter surname"/>
                 </div>
 
-                <h4>Name:${enter}</h4>
+                <h4>Name:*</h4>
+                <h5>(with a capital letter)</h5>
                 <div class="form-group">
                 <input type="text" name="name" class="form-control" placeholder="enter name"/>
                 </div>
 
-                <h4>Second name: ${enter}</h4>
+                <h4>Second name:*</h4>
+                <h5>(with a capital letter)</h5>
                 <div class="form-group">
                 <input type="text" name="secondname" class="form-control" placeholder="enter second name"/>
                 </div>
 
-                <h4>Email: ${enter}</h4>
-                    <div class="form-group">
+                <h4>Email:*</h4>
+                <div class="form-group">
                 <input type="text" name="email" class="form-control" placeholder="enter email"/>
-                    </div>
+                </div>
 
-                <h4>Login: ${enter}</h4>
-                        <div class="form-group">
+                <h4>Login:*</h4>
+                <h5>(may contain numbers, at least 2 characters)</h5>
+                <div class="form-group">
                 <input type="text" name="login" class="form-control" placeholder="enter login"/>
-                        </div>
+                </div>
 
-                <h4>Password: ${enter}</h4>
+                <h4>Password:*</h4>
+                <h5>(must contain a capital letter, a number and minimal length is 8)</h5>
                 <div class="form-group">
                 <input type="password" name="password" class="form-control" placeholder="enter password"/>
                 </div>
 
 
-                <h4>Confirm password: ${enter}</h4>
+                <h4>Confirm password:*</h4>
                 <div class="form-group">
                 <input type="password" name="passwordcheck" class="form-control" placeholder="confirm password"/>
                 </div>
 
-                <h4>Passport ID: ${enter}</h4>
+                <h4>Passport ID:*</h4>
+                <h5>(in XX1234567 format)</h5>
                 <div class="form-group">
                 <input type="text" name="passportID" class="form-control" placeholder="enter passport ID"/>
                 </div>
 
-                <h4>Phone number: ${enter}</h4>
+                <h4>Phone number:*</h4>
+                <h5>(in (123)4567890 format)</h5>
                 <div class="form-group">
                 <input type="text" name="phone" class="form-control" placeholder="enter phone number"/>
                 </div>
 
-                <h4>First subject: ${enter}</h4>
+                <h4>First subject:*</h4>
                 <div class="form-group">
                 <select name="subject1" class="form-control">
                     <c:forEach items="${subjects}" var="subject">
@@ -93,12 +100,13 @@
                 </select>
                 </div>
 
-                <h4>Points: ${enter}</h4>
+                <h4>Points:*</h4>
+                <h5>(number from 1 to 100)</h5>
                 <div class="form-group">
                 <input type="text" name="points1" class="form-control" placeholder="enter points"/>
                 </div>
 
-                <h4>Second subject: ${enter}</h4>
+                <h4>Second subject:*</h4>
                 <div class="form-group">
                 <select name="subject2" class="form-control">
                     <c:forEach items="${subjects}" var="subject">
@@ -107,12 +115,13 @@
                 </select>
                 </div>
 
-                <h4>Points: ${enter}</h4>
+                <h4>Points:*</h4>
+                <h5>(number from 1 to 100)</h5>
                 <div class="form-group">
                 <input type="text" name="points2" class="form-control" placeholder="enter points"/>
                 </div>
 
-                <h4>Third subject: ${enter}</h4>
+                <h4>Third subject:*</h4>
                 <div class="form-group">
                 <select name="subject3" class="form-control">
                     <c:forEach items="${subjects}" var="subject">
@@ -121,17 +130,19 @@
                 </select>
                 </div>
 
-                <h4>Points: ${enter}</h4>
+                <h4>Points:*</h4>
+                <h5>(number from 1 to 100)</h5>
                 <div class="form-group">
                 <input type="text" name="points3" class="form-control" placeholder="enter points"/>
                 </div>
 
-                <h4>Certificate: ${enter}</h4>
+                <h4>Certificate:*</h4>
+                <h5>(number from 1 to 100)</h5>
                 <div class="form-group">
                 <input type="text" name="certificate" class="form-control" placeholder="enter certificate points"/>
                 </div>
 
-                <h4>Faculty: ${enter}</h4>
+                <h4>Faculty:*</h4>
                 <div class="form-group">
                 <select onChange="getSpecialties(this)" name="faculty" class="form-control">
                     <c:forEach items="${faculties}" var="faculty">
@@ -140,16 +151,15 @@
                 </select>
                 </div>
 
-                <h4>Specialty: ${enter}</h4>
+                <h4>Specialty:*</h4>
                 <div class="form-group">
                 <select id="specialty" name = "specialty" class="form-control">
                 </select>
                 </div>
 
+                <h5>*All fields are required.</h5>
                 <br/>
-                <br/>
-                ${specialtiesByFaculty}
-                <br/>
+
                 ${errorEmptyValuesMessage}
                 <br/>
                 <input type="submit" class="btn btn-default" value="Sign up"/>

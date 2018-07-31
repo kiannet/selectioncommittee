@@ -25,7 +25,7 @@
     <div class="row centered">
         <div class="col-lg-8 col-lg-offset-2">
             <form name=" resultsForm" method="POST" action="controller">
-                <input type="hidden" name="command" value="updateresults"/>
+                <input type="hidden" name="command" value="update_results"/>
                 <br/>
                 <h2>WANT TO KNOW YOUR COMPETITORS?</h2>
                 <h4>check right now</h4>

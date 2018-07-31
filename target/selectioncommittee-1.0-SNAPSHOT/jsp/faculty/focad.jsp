@@ -37,7 +37,7 @@
                 <br/>
                 - Information and Computer-Aided Systems Design
                 </h3>
-
+            <br/>
             <p>The Faculty of Computer-Aided Design was opened in 1973. It is one of the most innovative and dynamically developing faculties in BSUIR. Faculty training facilities are based on international educational, scientific and production centres and laboratories, equipped with high-end hardware and software, as follows: Android Software Centre  – an international educational and scientific centre created in association with FORTE Knowledge company, Illinois Technology Association (ITA) and leading IT experts from the USA; an educational and research centre INTES established by an innovative company INTES with the support of foreign companies Schneider Electric (France) and CISCO (USA); a joint educational and scientific laboratory Integrated Mobile Systems established by an innovative company AXONIM Devices (a partner of Analog Devices, Texas Instruments and ST Microelectronics).
             </p>
         </div>

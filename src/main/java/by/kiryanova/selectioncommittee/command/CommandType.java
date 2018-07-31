@@ -1,27 +1,32 @@
 package by.kiryanova.selectioncommittee.command;
 
-import by.kiryanova.selectioncommittee.logic.DefaultReceiver;
-import by.kiryanova.selectioncommittee.logic.UniversityReceiver;
-import by.kiryanova.selectioncommittee.logic.UserReceiver;
+import by.kiryanova.selectioncommittee.command.common.*;
+import by.kiryanova.selectioncommittee.command.user.*;
+import by.kiryanova.selectioncommittee.service.DefaultReceiver;
+import by.kiryanova.selectioncommittee.service.CommonService;
+import by.kiryanova.selectioncommittee.service.UserService;
 
 public enum CommandType {
-    LOGIN(new LoginCommand(new UserReceiver())),
+    LOGIN(new LoginCommand(new UserService())),
     LOGOUT(new LogoutCommand(new DefaultReceiver())),
-    SIGNUP(new SignupCommand(new UserReceiver())),
-    FINDLIST(new FindListCommand(new UniversityReceiver())),
-    PROFILE(new ProfileCommand(new UserReceiver())),
-    TOLOGIN(new ToLoginCommand(new UserReceiver())),
-    TOSIGNUP(new ToSigningUpCommand(new UserReceiver())),
-    TOFACULTIES(new ToFacultiesCommand(new UniversityReceiver())),
-    TOUNIVERSITY(new ToUniversityCommand(new UniversityReceiver())),
-    RESULTS(new ResultsCommand(new UniversityReceiver())),
-    MOREABOUTFACULTY(new MoreAboutFacultyCommand()),
-    UPDATERESULTS(new UpdateResultsCommand(new UniversityReceiver())),
-    CHANGELANGUAGE(new ChangeLanguageCommand()),
-    DELETE(new DeleteProfileCommand(new UserReceiver())),
-    FORGOTPASSWORD(new ForgotPasswordCommand(new UserReceiver())),
-    TOCHANGEPROFILE(new ToChangeProfileCommand(new UserReceiver())),
-    CHANGEPROFILE(new ChangeProfileCommand(new UserReceiver()));
+    SIGNUP(new SignupCommand(new UserService())),
+    FIND_LIST(new FindListCommand(new CommonService())),
+    PROFILE(new ProfileCommand(new UserService())),
+    TO_LOGIN(new ToLoginCommand(new UserService())),
+    TO_SIGNUP(new ToSigningUpCommand(new UserService())),
+    TO_FACULTIES(new ToFacultiesCommand(new CommonService())),
+    TO_UNIVERSITY(new ToUniversityCommand(new CommonService())),
+    RESULTS(new ResultsCommand(new CommonService())),
+    MORE_ABOUT_FACULTY(new MoreAboutFacultyCommand(new CommonService())),
+    UPDATE_RESULTS(new UpdateResultsCommand(new CommonService())),
+    CHANGE_LANGUAGE(new ChangeLanguageCommand()),
+    DELETE(new DeleteProfileCommand(new UserService())),
+    FORGOT_PASSWORD(new ForgotPasswordCommand(new UserService())),
+    TO_CHANGE_PROFILE(new ToChangeProfileCommand(new UserService())),
+    CHANGE_PROFILE(new ChangeProfileCommand(new UserService())),
+    CHANGE_PASSWORD(new ChangePasswordCommand(new UserService())),
+    TO_CHANGE_PASSWORD(new ToChangePasswordCommand(new UserService())),
+    TO_HOME(new ToHomeCommand(new UserService()));
 
     private Command command;
 

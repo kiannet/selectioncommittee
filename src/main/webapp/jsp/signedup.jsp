@@ -27,7 +27,7 @@
                 <br/>
                 <h1>You've been successfully signed up!</h1>
                 <form name="signedupForm" method="POST" action="controller">
-                    <input type="hidden" name="command" value="tologin">
+                    <input type="hidden" name="command" value="to_login">
                     <br/>
                     <br/>
                     <input type="submit" value="Log in">

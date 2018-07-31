@@ -134,3 +134,10 @@ hr {
     color: darkgray;
 }
 
+.btn-link {
+    font-style: oblique;
+    background-color: #f85c35;
+    color: #f85c35;
+    font-size: 35px;
+}
+

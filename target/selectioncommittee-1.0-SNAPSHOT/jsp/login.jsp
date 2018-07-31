@@ -40,7 +40,7 @@
                     </div>
                     <a class="href" href="/jsp/forgotpassword.jsp">Forgot password?</a>
                     <br/>
-                    <a href="${pageContext.request.contextPath}/controller?command=findlist">New user?</a>
+                    <a href="${pageContext.request.contextPath}/controller?command=find_list">New user?</a>
                     <br/>
                     <br/>
                 <input type="submit" class="btn btn-default" value="Log in"/>

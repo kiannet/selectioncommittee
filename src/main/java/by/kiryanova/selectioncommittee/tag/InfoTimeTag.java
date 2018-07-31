@@ -6,7 +6,7 @@ import javax.servlet.jsp.tagext.TagSupport;
 import java.io.IOException;
 import java.util.GregorianCalendar;
 import java.util.Locale;
-
+@Deprecated
 public class InfoTimeTag extends TagSupport{
     @Override
     public int doStartTag() throws JspException{

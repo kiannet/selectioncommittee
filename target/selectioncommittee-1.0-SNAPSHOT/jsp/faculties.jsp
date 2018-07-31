@@ -18,22 +18,30 @@
 </head>
 <body>
 <jsp:include page="${pageContext.request.contextPath}/jsp/newheader.jsp"></jsp:include>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<c:forEach items="${faculties}" var="faculty">
-    <form>
-    ${faculty}
-        <input type="hidden" name="faculty" value=${faculty}>
-        <input type="hidden" name="command" value="moreaboutfaculty"/>
-        <br/>
-        <input type="submit" value="More..."/>
-    </form>
-<br/>
-</c:forEach>
-
+<div class="container">
+    <div class="row centered">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="panel panel-login">
+                <div class="panel-body">
+                    <div class="col-lg-12">
+        <c:forEach items="${faculties}" var="faculty">
+            <form>
+                <h2>
+                    • ${faculty}
+            <input type="hidden" name="faculty" value='${faculty}'/>
+            <input type="hidden" name="command" value="more_about_faculty"/>
+                <br/>
+            <input type="submit" class="btn btn-default" value="MORE"/>
+                </h2>
+            </form>
+            <br/>
+        </c:forEach>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+</div>
 </body>
 <jsp:include page="${pageContext.request.contextPath}/jsp/footer.jsp"></jsp:include>
 </html>

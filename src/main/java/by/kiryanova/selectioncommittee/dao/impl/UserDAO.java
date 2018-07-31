@@ -1,18 +1,14 @@
 package by.kiryanova.selectioncommittee.dao.impl;
 
-import by.kiryanova.selectioncommittee.connectionpool.ConnectionPool;
-import by.kiryanova.selectioncommittee.connectionpool.ProxyConnection;
-import by.kiryanova.selectioncommittee.dao.IUserDAO;
+import by.kiryanova.selectioncommittee.pool.ConnectionPool;
+import by.kiryanova.selectioncommittee.pool.ProxyConnection;
 import by.kiryanova.selectioncommittee.entity.Enrollee;
 import by.kiryanova.selectioncommittee.entity.User;
-import by.kiryanova.selectioncommittee.exception.ConnectionException;
 import by.kiryanova.selectioncommittee.exception.DAOException;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 public class UserDAO  {
@@ -23,11 +19,16 @@ public class UserDAO  {
     private static final String INSERT_INTO_ENROLLEE_SUBJECT_POINTS = "INSERT INTO enrollee_subject_points(subject_id_p, points, enrollee_id) VALUES ((SELECT subject_id FROM subject WHERE name=?), ?, ?)";
     private static final String INSERT_INTO_ENROLLEE_SPECIALTY = "INSERT INTO enrollee_specialty(enrollee_id, specialty_id) VALUES (?, (SELECT specialty_id FROM specialty WHERE name=?))";
     private static final String SELECT_ENROLLEE_ID_BY_PASSPORT = "SELECT enrollee_id FROM enrollee WHERE passport_id=?";
+    private static final String INSERT_ENROLLEE_ID_IN_USERS = "INSERT INTO users(enrollee_id) VALUES enrollee_id=? WHERE username=?";
+
     private static final String SET_ENROLLEE_ID_IN_USERS = "UPDATE users SET enrollee_id=? WHERE username=?";
     private static final String SELECT_USER_BY_USERANME_AND_PASSWORD = "SELECT user_id, email, password, type, username, enrollee_id FROM users WHERE username=? AND PASSWORD=?";
     private static final String SELECT_ENROLLEE_BY_USERNAME = "SELECT enrollee_id, passport_id, surname, name, second_name, phone, certificate FROM enrollee WHERE enrollee_id = (SELECT enrollee_id FROM users WHERE username=?)";
     private static final String SELECT_SPECIALTY_BY_ENROLLEE_ID = "SELECT name FROM specialty WHERE specialty_id = (SELECT specialty_id FROM enrollee_specialty WHERE enrollee_id=?)";
     private static final String DELETE_USER = "DELETE FROM users WHERE user_id = ?";
+    private static final String UPDATE_ENROLLEE_INFO = "UPDATE enrollee SET surname=?, name=?, second_name=?, passport_id=?, phone=? WHERE enrollee_id=?";
+    private static final String FIND_ENROLLEE_ID_BY_USER_ID = "SELECT enrollee_id FROM users WHERE user_id=?";
+    private static final String UPDATE_PASSWORD_BY_USER_ID = "UPDATE users SET password=? WHERE user_id=?";
     private static final String USER = "user";
 
     private static final UserDAO INSTANCE;
@@ -50,18 +51,18 @@ public class UserDAO  {
     }
 
 
-    public boolean matchUsernamePassword(String usernameValue, String passwordValue) throws DAOException {
+    //public boolean matchUsernamePassword(String usernameValue, String passwordValue) throws DAOException {
 
-        try (ProxyConnection connection = ConnectionPool.getInstance().getConnection();
-             PreparedStatement statement = connection.prepareStatement(SELECT_USER_ID_BY_USERNAME_PASSWORD)) {
-            statement.setString(1, usernameValue);
-            statement.setString(2, passwordValue);
-            ResultSet resultSet = statement.executeQuery();
-            return resultSet.next();
-        } catch (SQLException e) {
-            throw new DAOException(e);
-        }
-    }
+       // try (ProxyConnection connection = ConnectionPool.getInstance().getConnection();
+            // PreparedStatement statement = connection.prepareStatement(SELECT_USER_ID_BY_USERNAME_PASSWORD)) {
+            //statement.setString(1, usernameValue);
+            //statement.setString(2, passwordValue);
+            //ResultSet resultSet = statement.executeQuery();
+          //  return resultSet.next();
+       // } catch (SQLException e) {
+          //  throw new DAOException(e);
+        //}
+   // }
 
     public void addSpecialtyForEnrollee(Enrollee enrollee) throws DAOException {
 
@@ -138,7 +139,7 @@ public class UserDAO  {
     }
 
 
-    public void addEnrollee(String passportId, String surname, String name, String secondName, String phone, int certificate, String pic) throws DAOException {
+    public boolean addEnrollee(String passportId, String surname, String name, String secondName, String phone, int certificate, String pic) throws DAOException {
 
         try (ProxyConnection connection = ConnectionPool.getInstance().getConnection();
              PreparedStatement statement = connection.prepareStatement(INSERT_INTO_ENROLLEE)) {
@@ -154,11 +155,12 @@ public class UserDAO  {
         } catch (SQLException e) {
             throw new DAOException(e);
         }
+        return true;
     }
 
 
 
-    public void addUser(String email, String password, String login) throws DAOException {
+    public boolean addUser(String email, String password, String login) throws DAOException {
         try (ProxyConnection connection = ConnectionPool.getInstance().getConnection();
              PreparedStatement statement = connection.prepareStatement(INSERT_INTO_USERS)) {
             statement.setString(1, email);
@@ -171,9 +173,10 @@ public class UserDAO  {
         } catch (SQLException e) {
             throw new DAOException(e);
         }
+        return true;
     }
 
-    public void addEnrolleeIdToUser(int enrolleeId, String username) throws DAOException {
+    public boolean addEnrolleeIdToUser(int enrolleeId, String username) throws DAOException {
         try (ProxyConnection connection = ConnectionPool.getInstance().getConnection();
              PreparedStatement statement = connection.prepareStatement(SET_ENROLLEE_ID_IN_USERS)) {
             statement.setInt(1, enrolleeId);
@@ -184,9 +187,10 @@ public class UserDAO  {
         } catch (SQLException e) {
             throw new DAOException(e);
         }
+        return true;
     }
 
-    public void addEnrolleeIdToSpecalty(int enrolleeId, String specialty) throws DAOException {
+    public boolean addEnrolleeIdToSpecalty(int enrolleeId, String specialty) throws DAOException {
         try (ProxyConnection connection = ConnectionPool.getInstance().getConnection();
              PreparedStatement statement = connection.prepareStatement(INSERT_INTO_ENROLLEE_SPECIALTY)) {
             statement.setInt(1, enrolleeId);
@@ -197,9 +201,10 @@ public class UserDAO  {
         } catch (SQLException e) {
             throw new DAOException(e);
         }
+        return true;
     }
 
-    public void addEnrolleeIdToSubjects(String subject, int points, int enrolleeId) throws DAOException {
+    public boolean addEnrolleeIdToSubjects(String subject, int points, int enrolleeId) throws DAOException {
         try (ProxyConnection connection = ConnectionPool.getInstance().getConnection();
              PreparedStatement statement = connection.prepareStatement(INSERT_INTO_ENROLLEE_SUBJECT_POINTS)) {
             statement.setString(1, subject);
@@ -211,6 +216,7 @@ public class UserDAO  {
         } catch (SQLException e) {
             throw new DAOException(e);
         }
+        return true;
     }
 
     public int findEnrolleeIdByPassport(String passportId) throws DAOException {
@@ -224,6 +230,53 @@ public class UserDAO  {
                 enrolleeId = resultSet.getInt("enrollee_id");
             }
             return enrolleeId;
+        } catch (SQLException e) {
+            throw new DAOException(e);
+        }
+    }
+
+    public int findEnrolleeIdByUserId(int userID) throws DAOException {
+        int enrolleeId = 0;
+
+        try (ProxyConnection connection = ConnectionPool.getInstance().getConnection();
+             PreparedStatement statement = connection.prepareStatement(FIND_ENROLLEE_ID_BY_USER_ID)) {
+            statement.setInt(1, userID);
+            ResultSet resultSet = statement.executeQuery();
+            if (resultSet.next()) {
+                enrolleeId = resultSet.getInt("enrollee_id");
+            }
+            return enrolleeId;
+        } catch (SQLException e) {
+            throw new DAOException(e);
+        }
+    }
+
+
+    public void updateEnrolleeInfo(String surname, String name, String secondName, String passportID, String phone, int enrolleeID) throws DAOException {
+        try (ProxyConnection connection = ConnectionPool.getInstance().getConnection();
+             PreparedStatement statement = connection.prepareStatement(UPDATE_ENROLLEE_INFO)) {
+            statement.setString(1, surname);
+            statement.setString(2, name);
+            statement.setString(3, secondName);
+            statement.setString(4, passportID);
+            statement.setString(5, phone);
+            statement.setInt(6, enrolleeID);
+
+            statement.executeUpdate();
+
+        } catch (SQLException e) {
+            throw new DAOException(e);
+        }
+    }
+
+    public void updatePasswordByUserId(String password, int userID) throws DAOException{
+        try (ProxyConnection connection = ConnectionPool.getInstance().getConnection();
+             PreparedStatement statement = connection.prepareStatement(UPDATE_PASSWORD_BY_USER_ID)) {
+            statement.setString(1, password);
+            statement.setInt(2, userID);
+
+            statement.executeUpdate();
+
         } catch (SQLException e) {
             throw new DAOException(e);
         }

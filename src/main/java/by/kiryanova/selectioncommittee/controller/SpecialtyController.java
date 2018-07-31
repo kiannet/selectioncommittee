@@ -1,7 +1,7 @@
 package by.kiryanova.selectioncommittee.controller;
 
 import by.kiryanova.selectioncommittee.exception.ConnectionException;
-import by.kiryanova.selectioncommittee.logic.UniversityReceiver;
+import by.kiryanova.selectioncommittee.service.CommonService;
 import by.kiryanova.selectioncommittee.util.JsonConverter;
 
 import javax.servlet.ServletException;
@@ -42,7 +42,7 @@ public class SpecialtyController extends HttpServlet {
             throws IOException, ServletException, ConnectionException, SQLException {
         response.setContentType("application/json;charset=UTF-8");
         String facultyId = request.getParameter("faculty");
-        UniversityReceiver receiver = new UniversityReceiver();
+        CommonService receiver = new CommonService();
         List<String> specialties = receiver.findSpecialitiesNamesByFacultyId(facultyId);
         ServletOutputStream out = response.getOutputStream();
         JsonConverter converter = new JsonConverter();

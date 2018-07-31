@@ -1,4 +1,3 @@
 package by.kiryanova.selectioncommittee.dao;
-
-public class DAO {
+@Deprecated public class DAO {
 }

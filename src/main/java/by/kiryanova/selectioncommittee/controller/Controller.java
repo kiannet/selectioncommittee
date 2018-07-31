@@ -2,7 +2,7 @@ package by.kiryanova.selectioncommittee.controller;
 
 import by.kiryanova.selectioncommittee.command.ActionFactory;
 import by.kiryanova.selectioncommittee.command.Command;
-import by.kiryanova.selectioncommittee.command.EmptyCommand;
+import by.kiryanova.selectioncommittee.command.common.EmptyCommand;
 import by.kiryanova.selectioncommittee.constant.PageConstant;
 import by.kiryanova.selectioncommittee.exception.ConnectionException;
 
@@ -19,26 +19,26 @@ import java.util.Optional;
 @WebServlet("/controller")
 public class Controller extends HttpServlet{
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-        try {
+        //try {
             processRequest(request, response);
-        } catch (ConnectionException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+       // } catch (ConnectionException e) {
+          //  e.printStackTrace();
+        //} catch (SQLException e) {
+           // e.printStackTrace();
+        //}
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-        try {
+       // try {
             processRequest(request, response);
-        } catch (ConnectionException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+       // } catch (ConnectionException e) {
+         //   e.printStackTrace();
+       // } catch (SQLException e) {
+         //   e.printStackTrace();
+       // }
     }
 
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException, ConnectionException, SQLException {
+    protected void processRequest(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 
         String commandName = request.getParameter("command");
         Optional<Command> commandOptional = ActionFactory.defineCommand(commandName);
@@ -65,16 +65,6 @@ public class Controller extends HttpServlet{
             request.getSession().invalidate();
             response.sendRedirect(PageConstant.MAIN);
         }
-
-        //String page = command.execute(request);
-
-        //if (page != null){
-            //RequestDispatcher dispatcher = request.getRequestDispatcher(page);
-           // dispatcher.forward(request, response);
-        //} else {
-            //request.getSession().setAttribute("nullPage", "ERROR");
-            //response.sendRedirect(request.getContextPath() + "/index.jsp");
-       // }
 
     }
 }

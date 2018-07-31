@@ -52,32 +52,62 @@
                 <br>
                 <div class ="col-lg-4">
                     <div class="tilt">
-                        <a href="${pageContext.request.contextPath}/jsp/faculty/focad.jsp">FACULTY OF COMPUTER-AIDED DESIGN</a>
+                        <form method="POST" action="controller">
+                            <input type="hidden" name="faculty" value="Faculty of Computer Systems and Networks"/>
+                            <input type="hidden" name="command" value="more_about_faculty"/>
+                            <input type="submit" class="btn-link" style="color: #f85c35" value="FACULTY OF COMPUTER SYSTEMS AND NETWORKS"/>
+                        </form>
+                    </div>
+                </div>
+
+
+
+                <div class ="col-lg-4">
+                    <div class="tilt">
+                        <form method="POST" action="controller">
+                            <input type="hidden" name="faculty" value="Faculty of Infocommunications"/>
+                            <input type="hidden" name="command" value="more_about_faculty"/>
+                            <input type="submit" class="btn-link" style="color: #f85c35" value="FACULTY OF INFOCOMMUNICATIONS"/>
+                        </form>
+                    </div>
+                </div>
+
+                <div class ="col-lg-4">
+                    <div class="tilt">
+                        <form method="POST" action="controller">
+                            <input type="hidden" name="faculty" value="Faculty of Information Technologies and Control"/>
+                            <input type="hidden" name="command" value="more_about_faculty"/>
+                            <input type="submit" class="btn-link" style="color: #f85c35" value="FACULTY OF INFORMATION TECHNOLOGIES AND CONTROL"/>
+                        </form>
                     </div>
                 </div>
                 <div class ="col-lg-4">
                     <div class="tilt">
-                        <a href="#">FACULTY OF INFORMATION TECHNOLOGIES AND CONTROL</a>
+                        <form method="POST" action="controller">
+                        <input type="hidden" name="faculty" value="Faculty of Radioengineering and Electronics"/>
+                        <input type="hidden" name="command" value="more_about_faculty"/>
+                        <input type="submit" class="btn-link" style="color: #f85c35" value="FACULTY OF RADIOENGINEERING AND ELECTRONICS"/>
+                        </form>
                     </div>
                 </div>
                 <div class ="col-lg-4">
                     <div class="tilt">
-                        <a href="#">FACULTY OF RADIOENGINEERING AND ELECTRONICS</a>
+                        <form method="POST" action="controller">
+                            <input type="hidden" name="faculty" value="Faculty of Computer-aided Design"/>
+                            <input type="hidden" name="command" value="more_about_faculty"/>
+                            <input type="submit" class="btn-link" style="color: #f85c35" value="FACULTY OF COMPUTER-AIDED DESIGN"/>
+                        </form>
                     </div>
                 </div>
+
+
                 <div class ="col-lg-4">
                     <div class="tilt">
-                        <a href="#">FACULTY OF COMPUTER SYSTEMS AND NETWORKS</a>
-                    </div>
-                </div>
-                <div class ="col-lg-4">
-                    <div class="tilt">
-                        <a href="#">FACULTY OF INFOCOMMUNICATIONS</a>
-                    </div>
-                </div>
-                <div class ="col-lg-4">
-                    <div class="tilt">
-                        <a href="#">FACULTY OF ENGINEERING AND ECONOMICS</a>
+                        <form method="POST" action="controller">
+                            <input type="hidden" name="faculty" value="Faculty of Engineering and Economics"/>
+                            <input type="hidden" name="command" value="more_about_faculty"/>
+                            <input type="submit" class="btn-link" style="color: #f85c35" value="FACULTY OF ENGINEERING AND ECONOMICS"/>
+                        </form>
                     </div>
                 </div>
             </div>
