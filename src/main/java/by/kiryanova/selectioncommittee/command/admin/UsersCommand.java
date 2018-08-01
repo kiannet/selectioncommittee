@@ -9,6 +9,7 @@ import by.kiryanova.selectioncommittee.service.UserService;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.util.List;
 
 public class UsersCommand implements Command{
     private UserService receiver;
@@ -25,6 +26,8 @@ public class UsersCommand implements Command{
         //HttpSession session = request.getSession();
         //User user = (User)session.getAttribute(RoleType.USER);
 
+        List<User> users = receiver.findAllUsers();
+        request.setAttribute("users", users);
 
         //request.setAttribute("username", user.getUsername());
         //request.setAttribute("email", user.getEmail());

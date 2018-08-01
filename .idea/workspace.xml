@@ -30,118 +30,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="addenrollee.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="addenrollee.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/admin/addenrollee.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="103" column="0" lean-forward="true" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+            <state relative-caret-position="17">
+              <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommandType.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/command/CommandType.java">
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/entity/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="34" column="47" lean-forward="true" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
+            <state relative-caret-position="34">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddEnrolleeCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/command/admin/AddEnrolleeCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminProfileCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/command/admin/AdminProfileCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="27" column="61" lean-forward="false" selection-start-line="27" selection-start-column="61" selection-end-line="27" selection-end-column="61" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ToAddAdminCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/command/admin/ToAddAdminCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="36" column="5" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="36" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/dao/impl/UserDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-              <folding>
-                <marker date="1532012952895" expanded="true" signature="698:800" ph="INSERT INTO enrollee... " />
-                <marker date="1532012952895" expanded="true" signature="856:923" ph="INSERT INTO users... " />
-                <marker date="1532012952895" expanded="true" signature="997:1128" ph="INSERT INTO enrollee_subject_points... " />
-                <marker date="1532012952895" expanded="true" signature="1077:1120" ph="SELECT subje... subject" />
-                <marker date="1532012952895" expanded="true" signature="1197:1316" ph="INSERT INTO enrollee_specialty... " />
-                <marker date="1532012952895" expanded="true" signature="1267:1314" ph="SELECT speci... specialty" />
-                <marker date="1532012952895" expanded="true" signature="1385:1437" ph="SELECT enrol... enrollee" />
-                <marker date="1532012952895" expanded="true" signature="1635:1682" ph="UPDATE users... " />
-                <marker date="1532012952895" expanded="true" signature="1757:1860" ph="SELECT user_... users" />
-                <marker date="1532012952895" expanded="true" signature="1926:2088" ph="SELECT enrol... enrollee" />
-                <marker date="1532012952895" expanded="true" signature="2041:2087" ph="SELECT enrol... users" />
-                <marker date="1532012952895" expanded="true" signature="2158:2271" ph="SELECT name specialty" />
-                <marker date="1532012952895" expanded="true" signature="2207:2270" ph="SELECT speci... enrollee_specialty" />
-                <marker date="1532012952895" expanded="true" signature="2321:2356" ph="DELETE FROM users... " />
-                <marker date="1532012952895" expanded="true" signature="2415:2511" ph="UPDATE enrollee... " />
-                <marker date="1532012952895" expanded="true" signature="2577:2622" ph="SELECT enrol... users" />
-                <marker date="1532012952895" expanded="true" signature="2687:2730" ph="UPDATE users... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/dao/impl/AdminDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="26" column="128" lean-forward="false" selection-start-line="26" selection-start-column="128" selection-end-line="26" selection-end-column="128" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SignupCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/command/common/SignupCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="96" column="87" lean-forward="true" selection-start-line="78" selection-start-column="20" selection-end-line="96" selection-end-column="87" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ToAddEnrolleeCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/command/admin/ToAddEnrolleeCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="45" column="39" lean-forward="false" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -149,8 +53,99 @@
       <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/service/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="836">
-              <caret line="85" column="66" lean-forward="false" selection-start-line="85" selection-start-column="66" selection-end-line="85" selection-end-column="66" />
+            <state relative-caret-position="193">
+              <caret line="126" column="0" lean-forward="false" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UsersCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/command/admin/UsersCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/controller/Controller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserDAO.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/dao/impl/UserDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="310" column="29" lean-forward="true" selection-start-line="310" selection-start-column="29" selection-end-line="310" selection-end-column="29" />
+              <folding>
+                <marker date="1533120382198" expanded="true" signature="749:851" ph="INSERT INTO enrollee... " />
+                <marker date="1533120382198" expanded="true" signature="907:974" ph="INSERT INTO users... " />
+                <marker date="1533120382198" expanded="true" signature="1048:1179" ph="INSERT INTO enrollee_subject_points... " />
+                <marker date="1533120382198" expanded="true" signature="1128:1171" ph="SELECT subje... subject" />
+                <marker date="1533120382198" expanded="true" signature="1248:1367" ph="INSERT INTO enrollee_specialty... " />
+                <marker date="1533120382198" expanded="true" signature="1318:1365" ph="SELECT speci... specialty" />
+                <marker date="1533120382198" expanded="true" signature="1436:1488" ph="SELECT enrol... enrollee" />
+                <marker date="1533120382198" expanded="true" signature="1686:1733" ph="UPDATE users... " />
+                <marker date="1533120382198" expanded="true" signature="1808:1911" ph="SELECT user_... users" />
+                <marker date="1533120382198" expanded="true" signature="1977:2139" ph="SELECT enrol... enrollee" />
+                <marker date="1533120382198" expanded="true" signature="2092:2138" ph="SELECT enrol... users" />
+                <marker date="1533120382198" expanded="true" signature="2209:2322" ph="SELECT name specialty" />
+                <marker date="1533120382198" expanded="true" signature="2258:2321" ph="SELECT speci... enrollee_specialty" />
+                <marker date="1533120382198" expanded="true" signature="2372:2407" ph="DELETE FROM users... " />
+                <marker date="1533120382198" expanded="true" signature="2466:2562" ph="UPDATE enrollee... " />
+                <marker date="1533120382198" expanded="true" signature="2628:2673" ph="SELECT enrol... users" />
+                <marker date="1533120382198" expanded="true" signature="2738:2781" ph="UPDATE users... " />
+                <marker date="1533120382198" expanded="true" signature="2831:2901" ph="SELECT user_... users" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResultSetImpl.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.8-dmr/mysql-connector-java-8.0.8-dmr-sources.jar!/com/mysql/cj/jdbc/result/ResultSetImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="893" column="0" lean-forward="false" selection-start-line="893" selection-start-column="0" selection-end-line="893" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="table.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/admin/table.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="30" column="41" lean-forward="false" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="enrolleeadded.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/admin/enrolleeadded.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/profile.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1468">
+              <caret line="109" column="0" lean-forward="true" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -196,7 +191,6 @@
         <option value="$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/dao/IUserDAO.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/command/user/ToChangePasswordCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/dao/impl/UserDAO.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/signup.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/command/common/LoginCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/command/user/ChangeProfileCommand.java" />
@@ -220,13 +214,11 @@
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/faculties.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/command/common/ToHomeCommand.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/carousel.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/admin/table.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/constant/RoleType.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/command/common/UsersCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/command/admin/ToAddAdmin.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/constant/PageConstant.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/command/admin/ToAddAdminCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/command/admin/UsersCommand.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/newheader.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/command/admin/AdminProfileCommand.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/admin/profile.jsp" />
@@ -234,10 +226,13 @@
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/admin/enrolleeadded.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/admin/addenrollee.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/dao/impl/AdminDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/command/admin/AddEnrolleeCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/command/admin/ToAddEnrolleeCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/command/CommandType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/command/admin/UsersCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/admin/table.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/dao/impl/UserDAO.java" />
       </list>
     </option>
   </component>
@@ -311,8 +306,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -401,6 +394,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="selectioncommittee" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="selectioncommittee" type="b2602c69:ProjectViewProjectNode" />
+              <item name="selectioncommittee" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="selectioncommittee" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -412,6 +414,15 @@
               <item name="selectioncommittee" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="selectioncommittee" type="b2602c69:ProjectViewProjectNode" />
+              <item name="selectioncommittee" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="selectioncommittee" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="selectioncommittee" type="b2602c69:ProjectViewProjectNode" />
@@ -476,10 +487,61 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="selectioncommittee" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="selectioncommittee" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: mysql:mysql-connector-java:8.0.8-dmr" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="selectioncommittee" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: mysql:mysql-connector-java:8.0.8-dmr" type="70bed36:NamedLibraryElementNode" />
+              <item name="mysql-connector-java-8.0.8-dmr.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="selectioncommittee" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: mysql:mysql-connector-java:8.0.8-dmr" type="70bed36:NamedLibraryElementNode" />
+              <item name="mysql-connector-java-8.0.8-dmr.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="mysql" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="selectioncommittee" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: mysql:mysql-connector-java:8.0.8-dmr" type="70bed36:NamedLibraryElementNode" />
+              <item name="mysql-connector-java-8.0.8-dmr.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="mysql" type="462c0819:PsiDirectoryNode" />
+              <item name="cj" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="selectioncommittee" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: mysql:mysql-connector-java:8.0.8-dmr" type="70bed36:NamedLibraryElementNode" />
+              <item name="mysql-connector-java-8.0.8-dmr.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="mysql" type="462c0819:PsiDirectoryNode" />
+              <item name="cj" type="462c0819:PsiDirectoryNode" />
+              <item name="jdbc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="selectioncommittee" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: mysql:mysql-connector-java:8.0.8-dmr" type="70bed36:NamedLibraryElementNode" />
+              <item name="mysql-connector-java-8.0.8-dmr.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="mysql" type="462c0819:PsiDirectoryNode" />
+              <item name="cj" type="462c0819:PsiDirectoryNode" />
+              <item name="jdbc" type="462c0819:PsiDirectoryNode" />
+              <item name="result" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
@@ -715,12 +777,13 @@
       <workItem from="1531997208125" duration="19534000" />
       <workItem from="1532689259857" duration="15234000" />
       <workItem from="1532811799501" duration="681000" />
-      <workItem from="1532888697595" duration="19304000" />
+      <workItem from="1532888697595" duration="19523000" />
+      <workItem from="1533112830472" duration="3692000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="363290000" />
+    <option name="totallyTimeSpent" value="367201000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -728,7 +791,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16176471" sideWeight="0.22919819" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16176471" sideWeight="0.23827533" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.034039333" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -738,7 +801,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30718955" sideWeight="0.74886537" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30718955" sideWeight="0.7443268" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1879085" sideWeight="0.4515885" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -746,11 +809,10 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21212122" sideWeight="0.4861963" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16176471" sideWeight="0.77080184" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16176471" sideWeight="0.76172465" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32828283" sideWeight="0.26917177" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33207262" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33736762" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -758,6 +820,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -801,11 +864,17 @@
           <properties />
           <option name="timeStamp" value="79" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/command/admin/UsersCommand.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="80" />
+      <option name="time" value="81" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
@@ -849,34 +918,10 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/table.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/selectioncommittee-1.0-SNAPSHOT/js/specialty.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/passwordchanged.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/result.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -892,7 +937,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
           <caret line="60" column="27" lean-forward="false" selection-start-line="60" selection-start-column="27" selection-end-line="60" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -904,19 +948,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/faculty/focad.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="27" column="37" lean-forward="false" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/faculty/focad.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/validator/Validator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="103">
           <caret line="46" column="38" lean-forward="false" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -932,7 +968,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-918">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -940,15 +975,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="140" column="20" lean-forward="true" selection-start-line="140" selection-start-column="20" selection-end-line="140" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/faculties.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="31" column="12" lean-forward="true" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="76" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -964,21 +990,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="33" column="34" lean-forward="true" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
-          <folding>
-            <element signature="n#style#0;n#input#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#2;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#2;n#form#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#2;n#form#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#2;n#form#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#2;n#form#0;n#div#0;n#div#5;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/admin/table.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -995,7 +1006,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1003,7 +1013,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1011,7 +1020,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="19" column="5" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="19" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1035,7 +1043,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1051,15 +1058,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/command/common/ToFacultiesCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1067,9 +1065,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="22" column="36" lean-forward="false" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1077,7 +1072,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="26" column="5" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="26" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1085,7 +1079,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1093,7 +1086,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1101,7 +1093,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-31">
           <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1117,17 +1108,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="66" lean-forward="false" selection-start-line="22" selection-start-column="66" selection-end-line="22" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/command/admin/UsersCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="31" column="39" lean-forward="false" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1135,14 +1115,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="61" column="94" lean-forward="false" selection-start-line="61" selection-start-column="94" selection-end-line="61" selection-end-column="94" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/profile.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="108" column="7" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="108" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -1171,6 +1143,101 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/dao/impl/UniversityDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="175" column="31" lean-forward="true" selection-start-line="175" selection-start-column="31" selection-end-line="175" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/dao/impl/AdminDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="26" column="128" lean-forward="false" selection-start-line="26" selection-start-column="128" selection-end-line="26" selection-end-column="128" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/command/admin/AdminProfileCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="27" column="61" lean-forward="false" selection-start-line="27" selection-start-column="61" selection-end-line="27" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/command/admin/ToAddAdminCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="36" column="5" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="36" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/command/common/SignupCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1394">
+          <caret line="96" column="87" lean-forward="false" selection-start-line="78" selection-start-column="20" selection-end-line="96" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/command/admin/AddEnrolleeCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/command/CommandType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="34" column="47" lean-forward="false" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/command/admin/ToAddEnrolleeCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="45" column="39" lean-forward="false" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/command/common/ToFacultiesCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/faculties.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="46" column="7" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="46" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/profile.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1468">
+          <caret line="109" column="0" lean-forward="true" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/admin/enrolleeadded.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1179,132 +1246,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/dao/impl/UniversityDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/admin/addenrollee.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="175" column="31" lean-forward="true" selection-start-line="175" selection-start-column="31" selection-end-line="175" selection-end-column="31" />
+        <state relative-caret-position="17">
+          <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/admin/table.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="30" column="41" lean-forward="false" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/controller/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="126" column="0" lean-forward="false" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/command/admin/UsersCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
-            <marker date="1532962137209" expanded="true" signature="551:651" ph="SELECT name faculty" />
-            <marker date="1532962137209" expanded="true" signature="599:650" ph="SELECT unive... university" />
-            <marker date="1532962137209" expanded="true" signature="721:814" ph="SELECT name specialty" />
-            <marker date="1532962137209" expanded="true" signature="768:813" ph="SELECT facul... faculty" />
-            <marker date="1532962137209" expanded="true" signature="873:957" ph="SELECT s.nam... specialty" />
-            <marker date="1532962137209" expanded="true" signature="1012:1036" ph="SELECT name subject" />
-            <marker date="1532962137209" expanded="true" signature="1107:1152" ph="SELECT name specialty" />
-            <marker date="1532962137209" expanded="true" signature="1220:1404" ph="SELECT surna... enrollee" />
-            <marker date="1532962137209" expanded="true" signature="1290:1403" ph="SELECT enrol... enrollee_specialty" />
-            <marker date="1532962137209" expanded="true" signature="1353:1402" ph="SELECT speci... specialty" />
-            <marker date="1532962137209" expanded="true" signature="1471:1533" ph="SELECT point... enrollee_subject_points" />
-            <marker date="1532962137209" expanded="true" signature="1605:1657" ph="SELECT certi... enrollee" />
-            <marker date="1532962137209" expanded="true" signature="1731:1835" ph="SELECT name subject" />
-            <marker date="1532962137209" expanded="true" signature="1908:1952" ph="SELECT descr... faculty" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/dao/impl/AdminDAO.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.8-dmr/mysql-connector-java-8.0.8-dmr-sources.jar!/com/mysql/cj/jdbc/result/ResultSetImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="26" column="128" lean-forward="false" selection-start-line="26" selection-start-column="128" selection-end-line="26" selection-end-column="128" />
+        <state relative-caret-position="132">
+          <caret line="893" column="0" lean-forward="false" selection-start-line="893" selection-start-column="0" selection-end-line="893" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/dao/impl/UserDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding>
-            <marker date="1532012952895" expanded="true" signature="698:800" ph="INSERT INTO enrollee... " />
-            <marker date="1532012952895" expanded="true" signature="856:923" ph="INSERT INTO users... " />
-            <marker date="1532012952895" expanded="true" signature="997:1128" ph="INSERT INTO enrollee_subject_points... " />
-            <marker date="1532012952895" expanded="true" signature="1077:1120" ph="SELECT subje... subject" />
-            <marker date="1532012952895" expanded="true" signature="1197:1316" ph="INSERT INTO enrollee_specialty... " />
-            <marker date="1532012952895" expanded="true" signature="1267:1314" ph="SELECT speci... specialty" />
-            <marker date="1532012952895" expanded="true" signature="1385:1437" ph="SELECT enrol... enrollee" />
-            <marker date="1532012952895" expanded="true" signature="1635:1682" ph="UPDATE users... " />
-            <marker date="1532012952895" expanded="true" signature="1757:1860" ph="SELECT user_... users" />
-            <marker date="1532012952895" expanded="true" signature="1926:2088" ph="SELECT enrol... enrollee" />
-            <marker date="1532012952895" expanded="true" signature="2041:2087" ph="SELECT enrol... users" />
-            <marker date="1532012952895" expanded="true" signature="2158:2271" ph="SELECT name specialty" />
-            <marker date="1532012952895" expanded="true" signature="2207:2270" ph="SELECT speci... enrollee_specialty" />
-            <marker date="1532012952895" expanded="true" signature="2321:2356" ph="DELETE FROM users... " />
-            <marker date="1532012952895" expanded="true" signature="2415:2511" ph="UPDATE enrollee... " />
-            <marker date="1532012952895" expanded="true" signature="2577:2622" ph="SELECT enrol... users" />
-            <marker date="1532012952895" expanded="true" signature="2687:2730" ph="UPDATE users... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/command/admin/AdminProfileCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
-          <caret line="27" column="61" lean-forward="false" selection-start-line="27" selection-start-column="61" selection-end-line="27" selection-end-column="61" />
+          <caret line="310" column="29" lean-forward="true" selection-start-line="310" selection-start-column="29" selection-end-line="310" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1533120382198" expanded="true" signature="749:851" ph="INSERT INTO enrollee... " />
+            <marker date="1533120382198" expanded="true" signature="907:974" ph="INSERT INTO users... " />
+            <marker date="1533120382198" expanded="true" signature="1048:1179" ph="INSERT INTO enrollee_subject_points... " />
+            <marker date="1533120382198" expanded="true" signature="1128:1171" ph="SELECT subje... subject" />
+            <marker date="1533120382198" expanded="true" signature="1248:1367" ph="INSERT INTO enrollee_specialty... " />
+            <marker date="1533120382198" expanded="true" signature="1318:1365" ph="SELECT speci... specialty" />
+            <marker date="1533120382198" expanded="true" signature="1436:1488" ph="SELECT enrol... enrollee" />
+            <marker date="1533120382198" expanded="true" signature="1686:1733" ph="UPDATE users... " />
+            <marker date="1533120382198" expanded="true" signature="1808:1911" ph="SELECT user_... users" />
+            <marker date="1533120382198" expanded="true" signature="1977:2139" ph="SELECT enrol... enrollee" />
+            <marker date="1533120382198" expanded="true" signature="2092:2138" ph="SELECT enrol... users" />
+            <marker date="1533120382198" expanded="true" signature="2209:2322" ph="SELECT name specialty" />
+            <marker date="1533120382198" expanded="true" signature="2258:2321" ph="SELECT speci... enrollee_specialty" />
+            <marker date="1533120382198" expanded="true" signature="2372:2407" ph="DELETE FROM users... " />
+            <marker date="1533120382198" expanded="true" signature="2466:2562" ph="UPDATE enrollee... " />
+            <marker date="1533120382198" expanded="true" signature="2628:2673" ph="SELECT enrol... users" />
+            <marker date="1533120382198" expanded="true" signature="2738:2781" ph="UPDATE users... " />
+            <marker date="1533120382198" expanded="true" signature="2831:2901" ph="SELECT user_... users" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/command/admin/ToAddAdminCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="36" column="5" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="36" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="85" column="66" lean-forward="false" selection-start-line="85" selection-start-column="66" selection-end-line="85" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/command/common/SignupCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="96" column="87" lean-forward="true" selection-start-line="78" selection-start-column="20" selection-end-line="96" selection-end-column="87" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/command/admin/AddEnrolleeCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/command/CommandType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="34" column="47" lean-forward="true" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/kiryanova/selectioncommittee/command/admin/ToAddEnrolleeCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="45" column="39" lean-forward="false" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/admin/addenrollee.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="103" column="0" lean-forward="true" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>

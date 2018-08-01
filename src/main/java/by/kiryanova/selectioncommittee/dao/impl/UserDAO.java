@@ -9,6 +9,8 @@ import by.kiryanova.selectioncommittee.exception.DAOException;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 public class UserDAO  {
@@ -29,6 +31,7 @@ public class UserDAO  {
     private static final String UPDATE_ENROLLEE_INFO = "UPDATE enrollee SET surname=?, name=?, second_name=?, passport_id=?, phone=? WHERE enrollee_id=?";
     private static final String FIND_ENROLLEE_ID_BY_USER_ID = "SELECT enrollee_id FROM users WHERE user_id=?";
     private static final String UPDATE_PASSWORD_BY_USER_ID = "UPDATE users SET password=? WHERE user_id=?";
+    private static final String SELECT_USER = "SELECT user_id, email, password, username FROM users WHERE type='user'";
     private static final String USER = "user";
 
     private static final UserDAO INSTANCE;
@@ -280,6 +283,33 @@ public class UserDAO  {
         } catch (SQLException e) {
             throw new DAOException(e);
         }
+    }
+
+    public List<User> findAllUsers() throws DAOException {
+        List<User> users = new ArrayList<>();
+
+        try (ProxyConnection connection = ConnectionPool.getInstance().getConnection();
+             PreparedStatement statement = connection.prepareStatement(SELECT_USER)) {
+            ResultSet resultSet = statement.executeQuery();
+            while (resultSet.next()){
+                User user = initUser(resultSet);
+                users.add(user);
+            }
+        } catch (SQLException e) {
+            throw new DAOException(e);
+        }
+
+        return users;
+    }
+
+    private User initUser(ResultSet resultSet) throws SQLException {
+        User user = new User();
+        user.setUserId(resultSet.getInt("user_id"));
+        user.setEmail(resultSet.getString("email"));
+        user.setUsername(resultSet.getString("username"));
+        user.setPassword(resultSet.getString("password"));
+        user.setRole("user");
+        return user;
     }
 
 }

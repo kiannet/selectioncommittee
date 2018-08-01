@@ -8,6 +8,9 @@ import by.kiryanova.selectioncommittee.exception.DAOException;
 import by.kiryanova.selectioncommittee.exception.ServiceException;
 import by.kiryanova.selectioncommittee.validator.Validator;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class UserService {
     UserDAO dao = UserDAO.getInstance();
@@ -115,6 +118,18 @@ public class UserService {
             throw new ServiceException(e);
             //e.printStackTrace();
         }
+    }
+
+    public List<User> findAllUsers(){
+        List<User> users = new ArrayList<>();
+
+        try {
+            users = dao.findAllUsers();
+        } catch (DAOException e) {
+            e.printStackTrace();
+        }
+
+        return users;
     }
 
 }
