@@ -27,7 +27,7 @@
                         <c:forEach items="${users}" var="user">
                             <form>
                                 <h2>
-                                    ${user.email}
+                                    ${user.username} ${user.email}
                                     <br/>
                                 </h2>
                             </form>

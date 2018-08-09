@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib prefix="ctg" uri="customtags" %>
 <html>
 <head>
@@ -30,8 +31,13 @@
                     <input type="hidden" name="command" value="logout">
                     <br/>
                     <br/>
+                <c:if test="${sessionScope.role == 'user'}">
                     <a href="${pageContext.request.contextPath}/controller?command=profile">See your profile</a>
-                    <h4>or</h4>
+                </c:if>
+                <c:if test="${sessionScope.role == 'admin'}">
+                    <a href="${pageContext.request.contextPath}/controller?command=admin_profile">See your profile</a>
+                </c:if>
+    <h4>or</h4>
                     <a href="${pageContext.request.contextPath}/controller?command=results">See results</a>
                     <h4>or</h4>
                     <input type="submit" value="Log out">
