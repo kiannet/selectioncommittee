@@ -302,6 +302,7 @@ public class UserDAO  {
         return users;
     }
 
+
     private User initUser(ResultSet resultSet) throws SQLException {
         User user = new User();
         user.setUserId(resultSet.getInt("user_id"));

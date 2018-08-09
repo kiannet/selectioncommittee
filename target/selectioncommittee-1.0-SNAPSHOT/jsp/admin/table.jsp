@@ -25,9 +25,12 @@
                 <div class="panel-body">
                     <div class="col-lg-12">
                         <c:forEach items="${users}" var="user">
-                            <form>
+                            <form name="deleteUser" method="POST" action="controller">
+                                <input type="hidden" name="command" value="delete_user"/>
                                 <h2>
-                                    ${user.username} ${user.email}
+                                    <input type="hidden" name="id" value="${user.userId}" />
+                                    ${user.userId} ${user.username} ${user.email}
+                                    <input type="submit" class="btn btn-default" value="Delete"/>
                                     <br/>
                                 </h2>
                             </form>
