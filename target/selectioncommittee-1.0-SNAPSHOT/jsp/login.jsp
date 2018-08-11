@@ -44,6 +44,7 @@
                     <br/>
                     <br/>
                 <input type="submit" class="btn btn-default" value="Log in"/>
+                    <br/>
                     ${emptyUsernameOrPassword}
                     ${errorLoginPassMessage}
                 </form>

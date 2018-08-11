@@ -21,4 +21,5 @@ public class PageConstant {
     public static final String ADMIN_PROFILE = "/jsp/admin/profile.jsp";
     public static final String ADD_ENROLLEE = "/jsp/admin/addenrollee.jsp";
     public static final String USERS_TABLE = "/jsp/admin/table.jsp";
+    public static final String CHANGE_ADMIN_PROFILE = "/jsp/admin/changeprofile.jsp";
 }

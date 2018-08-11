@@ -12,6 +12,7 @@ public class AdminDAO {
     private static final String INSERT_ENROLLEE = "";
     private static final String BAN_USER = "UPDATE users SET ban='true' WHERE user_id=?";
     private static final String UNBAN_USER = "UPDATE users SET ban='false' WHERE user_id=?";
+    private static final String UPDATE_INFO = "UPDATE users SET username=?, email=? WHERE user_id=?";
 
     private static final AdminDAO INSTANCE;
     private static AtomicBoolean instanceCreated = new AtomicBoolean(false);
@@ -52,6 +53,20 @@ public class AdminDAO {
         try (ProxyConnection connection = ConnectionPool.getInstance().getConnection();
              PreparedStatement statement = connection.prepareStatement(UNBAN_USER)) {
             statement.setInt(1, userId);
+
+            statement.executeUpdate();
+
+        } catch (SQLException e) {
+            throw new DAOException(e);
+        }
+    }
+
+    public void updateAdminProfile(String username, String email, int userId) throws DAOException {
+        try (ProxyConnection connection = ConnectionPool.getInstance().getConnection();
+             PreparedStatement statement = connection.prepareStatement(UPDATE_INFO)) {
+            statement.setString(1, username);
+            statement.setString(2, email);
+            statement.setInt(3, userId);
 
             statement.executeUpdate();
 

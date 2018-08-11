@@ -48,7 +48,7 @@
                                 </tbody>
                             </table>
                             <div  class=" col-md-9 col-lg-12 " >
-                                <a href="${pageContext.request.contextPath}/controller?command=to_change_profile" class="btn btn-dark" style="background-color: grey; color: whitesmoke">Change profile</a>
+                                <a href="${pageContext.request.contextPath}/controller?command=to_change_admin_profile" class="btn btn-dark" style="background-color: grey; color: whitesmoke">Change profile</a>
                                 <a href="${pageContext.request.contextPath}/controller?command=to_change_password" class="btn btn-dark" style="background-color: grey; color: whitesmoke">Change password</a>
                                 <a href="${pageContext.request.contextPath}/controller?command=delete" class="btn btn-dark" style="background-color: grey; color: whitesmoke">Delete profile</a>
                                 <a href="${pageContext.request.contextPath}/controller?command=logout" class="btn btn-dark" style="background-color: grey; color: whitesmoke">Log out</a>

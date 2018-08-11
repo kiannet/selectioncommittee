@@ -35,7 +35,9 @@ public enum CommandType {
     ADD_ENROLLEE(new AddEnrolleeCommand(new UserService())),
     DELETE_USER(new DeleteUserCommand(new UserService())),
     BAN_USER(new BanUserCommand(new AdminService())),
-    UNBAN_USER(new UnbanUserCommand(new AdminService()));
+    UNBAN_USER(new UnbanUserCommand(new AdminService())),
+    TO_CHANGE_ADMIN_PROFILE(new ToChangeAdminProfileCommand(new UserService())),
+    CHANGE_ADMIN_PROFILE(new ChangeAdminProfileCommand(new AdminService()));
 
     private Command command;
 

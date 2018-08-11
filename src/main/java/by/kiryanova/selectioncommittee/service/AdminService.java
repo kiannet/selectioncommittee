@@ -24,4 +24,13 @@ public class AdminService {
             // e.printStackTrace();
         }
     }
+
+    public void updateAdminProfile(String username, String email, int userId) throws ServiceException {
+        try {
+            adminDAO.updateAdminProfile(username, email, userId);
+        } catch (DAOException e) {
+            throw new ServiceException(e);
+            //e.printStackTrace();
+        }
+    }
 }

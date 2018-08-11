@@ -10,7 +10,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width", initial-scale=1.0>
-    <title>SIGN UP</title>
+    <title>CHANGE PROFILE</title>
     <link rel="stylesheet" href="${request.contextPath}/css/bootstrap.min.css">
     <link rel="stylesheet" href="${request.contextPath}/css/font-awesome.min.css">
     <link rel="stylesheet" href="${request.contextPath}/css/main.css">

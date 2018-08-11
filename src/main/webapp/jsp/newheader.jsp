@@ -38,7 +38,7 @@
             </c:if>
             <c:if test="${sessionScope.role == 'user'}">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="${pageContext.request.contextPath}/jsp/carousel.jsp">Main page</a></li>
+                    <li class="active"><a href="${pageContext.request.contextPath}/controller?command=to_home">Main page</a></li>
                     <li><a href="${pageContext.request.contextPath}/controller?command=to_university">About University</a></li>
                     <li><a href="${pageContext.request.contextPath}/controller?command=to_faculties">Faculties</a></li>
                     <li><a href="${pageContext.request.contextPath}/controller?command=results">Results</a></li>
@@ -53,7 +53,7 @@
             </c:if>
             <c:if test="${sessionScope.role == 'admin'}">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="${pageContext.request.contextPath}/jsp/carousel.jsp">Main page</a></li>
+                    <li class="active"><a href="${pageContext.request.contextPath}/controller?command=to_home">Main page</a></li>
                     <li><a href="${pageContext.request.contextPath}/controller?command=to_university">About University</a></li>
                     <li><a href="${pageContext.request.contextPath}/controller?command=to_faculties">Faculties</a></li>
                     <li><a href="${pageContext.request.contextPath}/controller?command=results">Results</a></li>
