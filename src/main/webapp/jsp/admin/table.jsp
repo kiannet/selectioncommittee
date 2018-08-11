@@ -45,6 +45,7 @@
                                 </form>
                             </c:if>
 
+                            <c:if test="${user.ban == 'false'}">
                             <form name="banUser" method="POST" action="controller">
                                 <input type="hidden" name="command" value="ban_user"/>
                                 <h3>
@@ -52,6 +53,7 @@
                                 <input type="submit" class="btn btn-default" value="Ban"/>
                                 </h3>
                             </form>
+                            </c:if>
                             <br/>
                         </c:forEach>
                     </div>

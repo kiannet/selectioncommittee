@@ -11,6 +11,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public class AdminDAO {
     private static final String INSERT_ENROLLEE = "";
     private static final String BAN_USER = "UPDATE users SET ban='true' WHERE user_id=?";
+    private static final String UNBAN_USER = "UPDATE users SET ban='false' WHERE user_id=?";
 
     private static final AdminDAO INSTANCE;
     private static AtomicBoolean instanceCreated = new AtomicBoolean(false);
@@ -38,6 +39,18 @@ public class AdminDAO {
     public void banUser(int userId) throws DAOException {
         try (ProxyConnection connection = ConnectionPool.getInstance().getConnection();
              PreparedStatement statement = connection.prepareStatement(BAN_USER)) {
+            statement.setInt(1, userId);
+
+            statement.executeUpdate();
+
+        } catch (SQLException e) {
+            throw new DAOException(e);
+        }
+    }
+
+    public void unbanUser(int userId) throws DAOException {
+        try (ProxyConnection connection = ConnectionPool.getInstance().getConnection();
+             PreparedStatement statement = connection.prepareStatement(UNBAN_USER)) {
             statement.setInt(1, userId);
 
             statement.executeUpdate();

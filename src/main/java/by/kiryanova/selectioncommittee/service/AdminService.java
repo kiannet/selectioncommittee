@@ -15,4 +15,13 @@ public class AdminService {
             // e.printStackTrace();
         }
     }
+
+    public void unbanUserByUserId(int userId) throws ServiceException {
+        try {
+            adminDAO.unbanUser(userId);
+        } catch (DAOException e) {
+            throw new ServiceException(e);
+            // e.printStackTrace();
+        }
+    }
 }

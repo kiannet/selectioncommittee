@@ -293,7 +293,7 @@ public class UserDAO  {
 
     private User initUser(ResultSet resultSet) throws SQLException {
         User user = new User();
-        
+
         user.setUserId(resultSet.getInt("user_id"));
         user.setEmail(resultSet.getString("email"));
         user.setUsername(resultSet.getString("username"));

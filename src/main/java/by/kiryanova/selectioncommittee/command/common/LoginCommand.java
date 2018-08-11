@@ -34,8 +34,15 @@ public class LoginCommand implements Command {
             try {
                 user = receiver.checkUser(loginValue, passValue);
                 if (user != null) {
-                    request.setAttribute("user", loginValue);
-                    page = setRole(request, user);
+                    if (!user.getBan().equals("true")){
+                        request.setAttribute("user", loginValue);
+                        page = setRole(request, user);
+                    }
+                    else {
+                        request.setAttribute("errorLoginPassMessage", "Account has been banned.");
+                        page = PageConstant.LOGIN;
+
+                    }
                 } else {
                     //setErrorMessage(request, MessageConstants.ERROR_LOGIN_LABEL, MessageProperty.ERROR_LOGIN_MESSAGE);
                     request.setAttribute("errorLoginPassMessage", "Incorrect login or password.");

@@ -22,7 +22,7 @@ public class UnbanUserCommand implements Command{
 
 
         try {
-            service.banUserByUserId(Integer.parseInt(request.getParameter("id")));
+            service.unbanUserByUserId(Integer.parseInt(request.getParameter("id")));
         } catch (ServiceException e) {
             e.printStackTrace();
         }
