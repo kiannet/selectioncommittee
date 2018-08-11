@@ -2,7 +2,7 @@ package by.kiryanova.selectioncommittee.entity;
 
 import java.util.ArrayList;
 import java.util.List;
-
+@Deprecated
 public class University {
     private int universityId;
     private String name;

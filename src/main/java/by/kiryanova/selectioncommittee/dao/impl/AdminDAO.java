@@ -1,9 +1,16 @@
 package by.kiryanova.selectioncommittee.dao.impl;
 
+import by.kiryanova.selectioncommittee.exception.DAOException;
+import by.kiryanova.selectioncommittee.pool.ConnectionPool;
+import by.kiryanova.selectioncommittee.pool.ProxyConnection;
+
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 public class AdminDAO {
-    private static final String INSERT_ENROLLEE = "user";
+    private static final String INSERT_ENROLLEE = "";
+    private static final String BAN_USER = "UPDATE users SET ban='true' WHERE user_id=?";
 
     private static final AdminDAO INSTANCE;
     private static AtomicBoolean instanceCreated = new AtomicBoolean(false);
@@ -26,5 +33,17 @@ public class AdminDAO {
 
     public void addEnrollee(String surname, String name, String secondName, String passportId, String phone, String certificate ){
 
+    }
+
+    public void banUser(int userId) throws DAOException {
+        try (ProxyConnection connection = ConnectionPool.getInstance().getConnection();
+             PreparedStatement statement = connection.prepareStatement(BAN_USER)) {
+            statement.setInt(1, userId);
+
+            statement.executeUpdate();
+
+        } catch (SQLException e) {
+            throw new DAOException(e);
+        }
     }
 }

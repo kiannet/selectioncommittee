@@ -25,8 +25,8 @@ public class Enrollee extends User{
 
     }
 
-    public Enrollee(int enrolleeId, String passportId, String surname, String name, String secondName, String phone, int certificate, String specialty, Subject subject1, Subject subject2, Subject subject3, String email, String username, String password, String role) {
-        super(enrolleeId, email, username, password, role);
+    public Enrollee(int enrolleeId, String passportId, String surname, String name, String secondName, String phone, int certificate, String specialty, Subject subject1, Subject subject2, Subject subject3, String email, String username, String password, String role, String ban) {
+        super(enrolleeId, email, username, password, role, ban);
         this.passportId = passportId;
         this.surname = surname;
         this.name = name;

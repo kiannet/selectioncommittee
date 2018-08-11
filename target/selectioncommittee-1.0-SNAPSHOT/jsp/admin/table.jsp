@@ -27,12 +27,30 @@
                         <c:forEach items="${users}" var="user">
                             <form name="deleteUser" method="POST" action="controller">
                                 <input type="hidden" name="command" value="delete_user"/>
-                                <h2>
+                                <h3>
                                     <input type="hidden" name="id" value="${user.userId}" />
-                                    ${user.userId} ${user.username} ${user.email}
-                                    <input type="submit" class="btn btn-default" value="Delete"/>
+                                    ${user.userId} ${user.username} ${user.email} ${user.ban}
                                     <br/>
-                                </h2>
+                                    <input type="submit" class="btn btn-default" value="Delete"/>
+                                </h3>
+                            </form>
+
+                            <c:if test="${user.ban == 'true'}">
+                                <form name="unbanUser" method="POST" action="controller">
+                                    <input type="hidden" name="command" value="unban_user"/>
+                                    <h3>
+                                        <input type="hidden" name="id" value="${user.userId}" />
+                                        <input type="submit" class="btn btn-default" value="Unban"/>
+                                    </h3>
+                                </form>
+                            </c:if>
+
+                            <form name="banUser" method="POST" action="controller">
+                                <input type="hidden" name="command" value="ban_user"/>
+                                <h3>
+                                <input type="hidden" name="id" value="${user.userId}" />
+                                <input type="submit" class="btn btn-default" value="Ban"/>
+                                </h3>
                             </form>
                             <br/>
                         </c:forEach>

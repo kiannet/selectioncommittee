@@ -19,23 +19,11 @@ import java.util.Optional;
 @WebServlet("/controller")
 public class Controller extends HttpServlet{
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-        //try {
             processRequest(request, response);
-       // } catch (ConnectionException e) {
-          //  e.printStackTrace();
-        //} catch (SQLException e) {
-           // e.printStackTrace();
-        //}
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-       // try {
             processRequest(request, response);
-       // } catch (ConnectionException e) {
-         //   e.printStackTrace();
-       // } catch (SQLException e) {
-         //   e.printStackTrace();
-       // }
     }
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {

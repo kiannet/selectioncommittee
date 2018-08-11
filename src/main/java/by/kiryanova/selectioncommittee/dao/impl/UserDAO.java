@@ -17,21 +17,21 @@ public class UserDAO  {
 
     private static final String SELECT_USER_ID_BY_USERNAME_PASSWORD = "SELECT user_id FROM user WHERE username=? AND password=?";
     private static final String INSERT_INTO_ENROLLEE = "INSERT INTO enrollee(passport_id, surname, name, second_name, phone, certificate) VALUES (?,?,?,?,?,?)";
-    private static final String INSERT_INTO_USERS = "INSERT INTO users(email, password, type, username) VALUES (?,?,?,?)";
+    private static final String INSERT_INTO_USERS = "INSERT INTO users(email, password, type, username, ban) VALUES (?,?,?,?,?)";
     private static final String INSERT_INTO_ENROLLEE_SUBJECT_POINTS = "INSERT INTO enrollee_subject_points(subject_id_p, points, enrollee_id) VALUES ((SELECT subject_id FROM subject WHERE name=?), ?, ?)";
     private static final String INSERT_INTO_ENROLLEE_SPECIALTY = "INSERT INTO enrollee_specialty(enrollee_id, specialty_id) VALUES (?, (SELECT specialty_id FROM specialty WHERE name=?))";
     private static final String SELECT_ENROLLEE_ID_BY_PASSPORT = "SELECT enrollee_id FROM enrollee WHERE passport_id=?";
     private static final String INSERT_ENROLLEE_ID_IN_USERS = "INSERT INTO users(enrollee_id) VALUES enrollee_id=? WHERE username=?";
 
     private static final String SET_ENROLLEE_ID_IN_USERS = "UPDATE users SET enrollee_id=? WHERE username=?";
-    private static final String SELECT_USER_BY_USERANME_AND_PASSWORD = "SELECT user_id, email, password, type, username, enrollee_id FROM users WHERE username=? AND PASSWORD=?";
+    private static final String SELECT_USER_BY_USERANME_AND_PASSWORD = "SELECT user_id, email, password, type, username, enrollee_id, ban FROM users WHERE username=? AND PASSWORD=?";
     private static final String SELECT_ENROLLEE_BY_USERNAME = "SELECT enrollee_id, passport_id, surname, name, second_name, phone, certificate FROM enrollee WHERE enrollee_id = (SELECT enrollee_id FROM users WHERE username=?)";
     private static final String SELECT_SPECIALTY_BY_ENROLLEE_ID = "SELECT name FROM specialty WHERE specialty_id = (SELECT specialty_id FROM enrollee_specialty WHERE enrollee_id=?)";
     private static final String DELETE_USER = "DELETE FROM users WHERE user_id = ?";
     private static final String UPDATE_ENROLLEE_INFO = "UPDATE enrollee SET surname=?, name=?, second_name=?, passport_id=?, phone=? WHERE enrollee_id=?";
     private static final String FIND_ENROLLEE_ID_BY_USER_ID = "SELECT enrollee_id FROM users WHERE user_id=?";
     private static final String UPDATE_PASSWORD_BY_USER_ID = "UPDATE users SET password=? WHERE user_id=?";
-    private static final String SELECT_USER = "SELECT user_id, email, password, username FROM users WHERE type='user'";
+    private static final String SELECT_USER = "SELECT user_id, email, password, username, ban FROM users WHERE type='user'";
     private static final String USER = "user";
 
     private static final UserDAO INSTANCE;
@@ -52,20 +52,6 @@ public class UserDAO  {
     public static UserDAO getInstance() {
         return INSTANCE;
     }
-
-
-    //public boolean matchUsernamePassword(String usernameValue, String passwordValue) throws DAOException {
-
-       // try (ProxyConnection connection = ConnectionPool.getInstance().getConnection();
-            // PreparedStatement statement = connection.prepareStatement(SELECT_USER_ID_BY_USERNAME_PASSWORD)) {
-            //statement.setString(1, usernameValue);
-            //statement.setString(2, passwordValue);
-            //ResultSet resultSet = statement.executeQuery();
-          //  return resultSet.next();
-       // } catch (SQLException e) {
-          //  throw new DAOException(e);
-        //}
-   // }
 
     public void addSpecialtyForEnrollee(Enrollee enrollee) throws DAOException {
 
@@ -133,6 +119,7 @@ public class UserDAO  {
                 user.setUsername(resultSet.getString("username"));
                 user.setPassword(resultSet.getString("password"));
                 user.setRole(resultSet.getString("type"));
+                user.setBan(resultSet.getString("ban"));
             }
         } catch (SQLException e) {
             throw new DAOException(e);
@@ -170,6 +157,7 @@ public class UserDAO  {
             statement.setString(2, password);
             statement.setString(3, USER);
             statement.setString(4, login);
+            statement.setString(5, "false");
 
             statement.executeUpdate();
 
@@ -238,12 +226,12 @@ public class UserDAO  {
         }
     }
 
-    public int findEnrolleeIdByUserId(int userID) throws DAOException {
+    public int findEnrolleeIdByUserId(int userId) throws DAOException {
         int enrolleeId = 0;
 
         try (ProxyConnection connection = ConnectionPool.getInstance().getConnection();
              PreparedStatement statement = connection.prepareStatement(FIND_ENROLLEE_ID_BY_USER_ID)) {
-            statement.setInt(1, userID);
+            statement.setInt(1, userId);
             ResultSet resultSet = statement.executeQuery();
             if (resultSet.next()) {
                 enrolleeId = resultSet.getInt("enrollee_id");
@@ -255,13 +243,13 @@ public class UserDAO  {
     }
 
 
-    public void updateEnrolleeInfo(String surname, String name, String secondName, String passportID, String phone, int enrolleeID) throws DAOException {
+    public void updateEnrolleeInfo(String surname, String name, String secondName, String passportId, String phone, int enrolleeID) throws DAOException {
         try (ProxyConnection connection = ConnectionPool.getInstance().getConnection();
              PreparedStatement statement = connection.prepareStatement(UPDATE_ENROLLEE_INFO)) {
             statement.setString(1, surname);
             statement.setString(2, name);
             statement.setString(3, secondName);
-            statement.setString(4, passportID);
+            statement.setString(4, passportId);
             statement.setString(5, phone);
             statement.setInt(6, enrolleeID);
 
@@ -272,11 +260,11 @@ public class UserDAO  {
         }
     }
 
-    public void updatePasswordByUserId(String password, int userID) throws DAOException{
+    public void updatePasswordByUserId(String password, int userId) throws DAOException{
         try (ProxyConnection connection = ConnectionPool.getInstance().getConnection();
              PreparedStatement statement = connection.prepareStatement(UPDATE_PASSWORD_BY_USER_ID)) {
             statement.setString(1, password);
-            statement.setInt(2, userID);
+            statement.setInt(2, userId);
 
             statement.executeUpdate();
 
@@ -305,11 +293,14 @@ public class UserDAO  {
 
     private User initUser(ResultSet resultSet) throws SQLException {
         User user = new User();
+        
         user.setUserId(resultSet.getInt("user_id"));
         user.setEmail(resultSet.getString("email"));
         user.setUsername(resultSet.getString("username"));
         user.setPassword(resultSet.getString("password"));
         user.setRole("user");
+        user.setBan(resultSet.getString("ban"));
+
         return user;
     }
 

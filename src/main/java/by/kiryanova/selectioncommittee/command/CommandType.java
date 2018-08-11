@@ -3,6 +3,7 @@ package by.kiryanova.selectioncommittee.command;
 import by.kiryanova.selectioncommittee.command.admin.*;
 import by.kiryanova.selectioncommittee.command.common.*;
 import by.kiryanova.selectioncommittee.command.user.*;
+import by.kiryanova.selectioncommittee.service.AdminService;
 import by.kiryanova.selectioncommittee.service.DefaultReceiver;
 import by.kiryanova.selectioncommittee.service.CommonService;
 import by.kiryanova.selectioncommittee.service.UserService;
@@ -32,7 +33,9 @@ public enum CommandType {
     USERS(new UsersCommand(new UserService())),
     TO_ADD_ENROLLEE(new ToAddEnrolleeCommand(new CommonService())),
     ADD_ENROLLEE(new AddEnrolleeCommand(new UserService())),
-    DELETE_USER(new DeleteUserCommand(new UserService()));
+    DELETE_USER(new DeleteUserCommand(new UserService())),
+    BAN_USER(new BanUserCommand(new AdminService())),
+    UNBAN_USER(new UnbanUserCommand(new AdminService()));
 
     private Command command;
 
